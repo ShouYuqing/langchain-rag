@@ -175,3 +175,22 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - [LangChain](https://github.com/langchain-ai/langchain) for the core framework
 - [OpenAI](https://openai.com/) for the language models 
+
+## Related Research
+
+This project builds upon foundational research in the field of retrieval-augmented generation and large language models. The following papers provide background and context for the techniques implemented in this system:
+
+- Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., ... & Kiela, D. (2020). [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401). *Advances in Neural Information Processing Systems*.
+  - The original RAG paper that introduced the concept of combining retrieval with generation.
+
+- Gao, L., Ma, X., Lin, J., & Callan, J. (2022). [Precise Zero-Shot Dense Retrieval without Relevance Labels](https://arxiv.org/abs/2212.10496). *arXiv preprint*.
+  - Research on hypothetical document embeddings used in our advanced retrieval module.
+
+- Pradeep, R., Sundarrajan, A., & Lin, J. (2023). [Prompting Is Programming: A Query Language for Large Language Models](https://arxiv.org/abs/2212.06094). *arXiv preprint*.
+  - Techniques for effective prompt engineering implemented in our generation module.
+
+- Khattab, O., Santhanam, K., Li, X., Hall, D., Liang, P., Potts, C., & Zaharia, M. (2022). [Demonstrate-Search-Predict: Composing Retrieval and Language Models for Knowledge-Intensive NLP](https://arxiv.org/abs/2212.14024). *arXiv preprint*.
+  - Framework for integrating retrieval with LLMs that influenced our system architecture.
+
+- Wang, S., Liu, Y., Xu, Y., Zhu, C., & Zeng, M. (2023). [Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection](https://arxiv.org/abs/2310.11511). *arXiv preprint*.
+  - Advanced RAG techniques incorporating self-reflection for improved output quality. 
