@@ -127,6 +127,30 @@ The `examples/` directory contains scripts demonstrating various aspects of the 
 
 Each example demonstrates different capabilities of the RAG system, from basic usage to advanced configurations and deployments.
 
+## Deploying Chroma with Docker Compose
+
+For improved scalability and persistence, the repository includes Docker Compose configuration for deploying a Chroma vector database:
+
+```bash
+# Navigate to the Docker directory
+cd docker/chroma
+
+# Generate secure credentials
+./generate_credentials.py
+
+# Start the Chroma database
+docker-compose up -d
+```
+
+Connect to the deployed database using the example script:
+
+```python
+# Update token in examples/chroma_docker_connection.py
+python examples/chroma_docker_connection.py
+```
+
+For detailed instructions, see [docker/chroma/README.md](docker/chroma/README.md).
+
 ## Advanced Usage
 
 ### Streaming Responses

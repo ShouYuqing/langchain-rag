@@ -1,0 +1,7 @@
+{
+  "tokens": {
+    "admin": "replace-with-secure-admin-token",
+    "reader": "replace-with-secure-reader-token",
+    "writer": "replace-with-secure-writer-token"
+  }
+} 
