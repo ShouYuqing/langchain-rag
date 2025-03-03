@@ -7,7 +7,7 @@ services:
       - chroma-data:/chroma/chroma
       - ./chroma_auth.json:/chroma/chroma_auth.json
     ports:
-      - "8002:8002"
+      - "8080:8000"
     environment:
       - ALLOW_RESET=true
       - ANONYMIZED_TELEMETRY=false
@@ -16,7 +16,7 @@ services:
       - CHROMA_SERVER_AUTH_PROVIDER=chromadb.auth.token.TokenAuthServerProvider
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8002/api/v1/heartbeat"]
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
       interval: 30s
       timeout: 10s
       retries: 3
